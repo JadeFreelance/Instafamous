@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InstaFamous</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" type="images" href="/images/heart.png" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-logo">
+        <h1>Insta<span>Famous</span></h1>
+      </div>
+
+      <div class="nav-navigation">
+        <div id="toggle"></div>
+        <div id="navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="suite.html">Suite</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home">
+      <div class="home-introduction">
+        <div class="home-text">
+          <h2
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
+            At InstaFamous, we're passionate about helping
+            <span>influencers</span> and <span>businesses</span> like yours
+            unlock the full potential of Instagram.
+          </h2>
+
+          <p
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="600"
+          >
+            Ready to take your Instagram game to the next level? Let's connect
+            and explore how InstaFamous can help you stand out, connect
+            authentically with your audience, and achieve meaningful results on
+            Instagram.
+          </p>
+
+          <a
+            href="#contact"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="800"
+            >SEND MESSAGE</a
+          >
+        </div>
+      </div>
+
+      <div
+        class="home-img"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1000"
+      >
+        <img src="./images/home-img.png" alt="influencer image" />
+      </div>
+    </section>
+
+    <section
+      data-aos="fade-down"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="1500"
+      id="contact"
+    >
+      <h1>Get in Touch</h1>
+      <div class="form-container">
+        <div class="contact-img">
+          <img src="./images/contact-img.png" />
+        </div>
+        <form>
+          <div>
+            <h2>Message us</h2>
+          </div>
+
+          <p>Name:</p>
+          <input type="name" placeholder="Name..." />
+          <p>Email:</p>
+          <input type="email" placeholder="Email..." />
+          <p>Message:</p>
+          <textarea placeholder="Message..."></textarea>
+          <input class="submit" type="submit" value="send" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <h1>Insta<span>Famous</span></h1>
+            <p>
+              Empower Your Influence, Amplify Your Business: Your Instagram
+              Success Starts Here!
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-link">
+          <div class="footer-navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="suite.html">Suite</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>Copyright &#169; 2024. All rights reserved.</p>
+      </div>
+    </footer>
+    <script>
+      const toggle = document.getElementById("toggle");
+      const navigation = document.getElementById("navigation");
+
+      document.onclick = function (e) {
+        if (e.target.id !== "navigation" && e.target.id !== "toggle") {
+          toggle.classList.remove("active");
+          navigation.classList.remove("active");
+        }
+      };
+
+      toggle.onclick = function () {
+        toggle.classList.toggle("active");
+        navigation.classList.toggle("active");
+      };
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+  </body>
+</html>
